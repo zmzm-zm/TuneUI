@@ -50,7 +50,7 @@ jobs:
           -DCMAKE_C_COMPILER=gcc \
           -DCMAKE_CXX_COMPILER=g++ \
           -DTUNEUI_BUILD_TESTS=ON \
-          -DTUNEUI_BUILD_EXAMPLES=ON
+          -DTUNEUI_BUILD_EXAMPLES=OFF
         shell: msys2 {0}
 
       - name: Build
