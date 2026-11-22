@@ -1,0 +1,10 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+# TuneUI is static; its exported link interface requires GLFW.
+find_dependency(glfw3 3.5 CONFIG REQUIRED)
+
+include("${CMAKE_CURRENT_LIST_DIR}/TuneUITargets.cmake")
+
+check_required_components(TuneUI)
